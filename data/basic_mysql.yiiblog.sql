@@ -156,6 +156,15 @@ CREATE TABLE `tbl_user` (
 LOCK TABLES `tbl_user` WRITE;
 /*!40000 ALTER TABLE `tbl_user` DISABLE KEYS */;
 INSERT INTO `tbl_user` VALUES (1,'demo','2e5c7db760a33498023813489cfadc0b','28b206548469ce62182048fd9cf91760','webmaster@example.com',NULL);
+
+INSERT INTO `tbl_user` VALUES (2,'user2','2e5c7db760a33498023813489cfadc0b','28b206548469ce62182048fd9cf91760','user2@example.com',NULL);
+INSERT INTO `tbl_user` VALUES (3,'user3','2e5c7db760a33498023813489cfadc0b','28b206548469ce62182048fd9cf91760','user3@example.com',NULL);
+INSERT INTO `tbl_user` VALUES (4,'user4','2e5c7db760a33498023813489cfadc0b','28b206548469ce62182048fd9cf91760','user4@example.com',NULL);
+INSERT INTO `tbl_user` VALUES (5,'user5','2e5c7db760a33498023813489cfadc0b','28b206548469ce62182048fd9cf91760','user5@example.com',NULL);
+INSERT INTO `tbl_user` VALUES (6,'user6','2e5c7db760a33498023813489cfadc0b','28b206548469ce62182048fd9cf91760','user6@example.com',NULL);
+INSERT INTO `tbl_user` VALUES (7,'user7','2e5c7db760a33498023813489cfadc0b','28b206548469ce62182048fd9cf91760','user7@example.com',NULL);
+INSERT INTO `tbl_user` VALUES (8,'user8','2e5c7db760a33498023813489cfadc0b','28b206548469ce62182048fd9cf91760','user8@example.com',NULL);
+INSERT INTO `tbl_user` VALUES (9,'user9','2e5c7db760a33498023813489cfadc0b','28b206548469ce62182048fd9cf91760','user9@example.com',NULL);
 /*!40000 ALTER TABLE `tbl_user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

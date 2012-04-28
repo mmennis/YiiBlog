@@ -162,7 +162,8 @@ class Post extends CActiveRecord
 				$this->create_time=$this->update_time=time();
 				if(Yii::app() instanceof CConsoleApplication)
 				{
-					$this->author_id=1;
+					$author_id = rand(1,9);
+					$this->author_id=$author_id;
 				}
 				else
 				{
