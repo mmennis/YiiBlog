@@ -18,3 +18,6 @@ Basic Setup Instructions
 * Create a database with the mysql dump file from the data directory.
 * Start up the apache server
 * Test link http://localhost/YiiBlog/index.php/post
+* Assuming that works you can proceed to populate the database with posts.
+* cd to the `protected` directory and run `./yiic populate`
+* Check that 50 posts were added.

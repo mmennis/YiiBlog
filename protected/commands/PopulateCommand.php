@@ -1,10 +1,10 @@
 <?php
 
+define("BLOGS_COUNT", 50);
+define("COMMENTS_COUNT", 15);
+
 class PopulateCommand extends CConsoleCommand
 {
-	
-	const BLOGS_COUNT = 100;
-	const COMMENTS_COUNT = 15;
 	
 	public $verbose=true;
 	
@@ -18,7 +18,7 @@ class PopulateCommand extends CConsoleCommand
 			"Mary", "Susan", "Brenda", "Anne"
 		);
 		
-		for ( $i =0; $i < 5; $i++ )
+		for ( $i =0; $i < BLOGS_COUNT; $i++ )
 		{
 			shuffle($tags);
 			
@@ -32,7 +32,7 @@ class PopulateCommand extends CConsoleCommand
 			$post->save();
 			
 			shuffle($commenters);
-			$comment_count = rand(1,20);
+			$comment_count = rand(1,COMMENTS_COUNT);
 			for ( $j = 0; $j < $comment_count; $j++ )
 			{
 				$k = rand(0,10);
